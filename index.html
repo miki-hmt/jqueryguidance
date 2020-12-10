@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>paopao</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
+			#box{
+				width: 50%;
+				margin:0 auto;
+				padding-top:40px;
+				overflow: hidden;
+			}
+			#box1{
+				float:left;
+				height:80px;
+				width: 120px;
+				background: #1089D4;
+			}
+			#box2{
+				float:right;
+				height:80px;
+				width:160px;
+				background: #C71585;
+			}
+			#box3{
+				position: absolute;
+				top:500px;
+				left: 100px;
+				width:150px;
+				height:150px;
+				background: greenyellow;
+			}
+			#box4{
+				position: absolute;
+				top:500px;
+				left: 1000px;
+				width:550px;
+				height:150px;
+				background: green;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/paopao.css"/>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="script/paopao.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function  () {
+				var arrObj = [$('#box1'),$('#box2'),$('#box3'),$('#box4')];
+				var arrTitle = ['提示信息可以修改哦^^','背景萌图可以添加或者修改哦','箭头指向也是可以修改的哈','444'];
+				$.guidance({
+					obj:arrObj,
+					title:arrTitle
+				});
+			});
+		</script>
+	</head>
+	<body style="height:2000px;">
+		<div id="box">
+			<div id="box1"></div>
+			<div id="box2"></div>
+		</div>
+		<div id="box3"></div>
+		<div id="box4"></div>
+	</body>
+</html>
